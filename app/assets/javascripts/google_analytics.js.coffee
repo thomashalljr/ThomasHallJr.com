@@ -39,6 +39,6 @@ class @GoogleAnalytics
     document.domain.indexOf(str) isnt -1
 
   @analyticsId: ->
-    '83288323'
+    'UA-83288323-1'
 
 GoogleAnalytics.load()

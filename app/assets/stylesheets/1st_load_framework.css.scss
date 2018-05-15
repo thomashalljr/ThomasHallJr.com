@@ -7,10 +7,6 @@ img {
   @extend .img-fluid;
   margin: 0 auto;
 }
-// override for the 'Home' navigation link
-.navbar-brand {
-  font-size: inherit;
-  }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -36,10 +32,61 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  margin-top: 30px; // accommodate the navbar
+  // margin-top: 30px; // accommodate the navbar
 }
 
 section {
   @extend .row;
   margin-top: 20px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #F5F5F5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.thomashalljr-pic {
+  width: 250px;
+  height: 250px;
+}
+
+a:hover {
+  color: #007bff;
 }
