@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "resume", to: redirect("https://drive.google.com/open?id=1JP8k619YpRHOSWOhgH5nq1-8cE2iq4IOuZ1VOOdPUZ0")
   resources :articles
   get "blog", to: "articles#index"
+  get "signup", to: "users#new"
+  post "users", to: "users#create"
 end

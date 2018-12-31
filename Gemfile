@@ -29,6 +29,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'mysql2', '~> 0.3.18'
+gem 'bcrypt', '~> 3.1.7'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
