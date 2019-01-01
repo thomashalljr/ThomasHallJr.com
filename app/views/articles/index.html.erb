@@ -2,8 +2,10 @@
 
 <%= will_paginate %>
 
-<p>
-  <%= link_to "Create new article", new_article_path %>
-</p>
+<% if logged_in? %>
+  <p>
+    <%= link_to "Create blog post", new_article_path %>
+  </p>
+<% end %>
 
 <%= render "articles", obj: @articles %>
