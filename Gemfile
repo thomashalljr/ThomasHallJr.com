@@ -13,7 +13,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'loofah', '2.2.2'
 gem 'rails-html-sanitizer', '1.0.4'
-gem 'will_paginate', '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -28,6 +27,7 @@ group :development do
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0'
+gem 'will_paginate-bootstrap4'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'mysql2', '~> 0.3.18'

@@ -16,7 +16,7 @@
   Title: <%= @article.title %>
 </p>
 <p>
-  Description: <%= @article.body %>
+  Description: <%= simple_format(@article.body) %>
 </p>
 <small>Created by: <%= @article.user.username if @article.user %>,
 <%= time_ago_in_words(@article.created_at) %> ago,

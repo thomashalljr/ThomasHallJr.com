@@ -1,11 +1,13 @@
-<h1 class="mt-5">Blog</h1>
+<h1 class="mt-5 mb-3 text-center">Blog</h1>
 
-<%= will_paginate %>
+<%= will_paginate @articles, list_classes: %w(pagination justify-content-center) %>
 
 <% if logged_in? %>
-  <p>
-    <%= link_to "Create blog post", new_article_path %>
-  </p>
+  <div class="row text-center">
+    <div class="col-md-12">
+      <%= link_to "Create blog post", new_article_path %>
+    </div>
+  </div>
 <% end %>
 
 <%= render "articles", obj: @articles %>
