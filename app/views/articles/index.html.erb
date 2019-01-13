@@ -1,6 +1,6 @@
-<h1 class="mt-5 mb-3 text-center">Blog</h1>
+<h1 class="mt-5 mb-4 text-center">Blog</h1>
 
-<%= will_paginate @articles, list_classes: %w(pagination justify-content-center) %>
+<%= will_paginate @articles, list_classes: %w(pagination justify-content-center mb-4) %>
 
 <% if logged_in? %>
   <div class="row text-center">
