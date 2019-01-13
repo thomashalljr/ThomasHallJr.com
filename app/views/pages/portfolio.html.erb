@@ -1,28 +1,26 @@
 <h1 class="mt-5">Portfolio</h1>
 
 <div class="album py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <%= link_to "https://thomashalljr-myrecipes.herokuapp.com/signup", target: :_blank do %>
-          <div class="card mb-4 box-shadow">
-            <%= image_tag("myrecipes-screenshot.jpg", class: "card-img-top") %>
-            <div class="card-body">
-              <p class="card-text">MyRecipes: Ruby on Rails app</p>
-            </div>
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to "https://thomashalljr-myrecipes.herokuapp.com/signup", target: :_blank do %>
+        <div class="card mb-4 box-shadow">
+          <%= image_tag("myrecipes-screenshot.jpg", class: "card-img-top") %>
+          <div class="card-body">
+            <p class="card-text">MyRecipes: Ruby on Rails app</p>
           </div>
-        <% end %>
-      </div>
-      <div class="col-md-4">
-        <%= link_to "https://github.com/thomashalljr", target: :_blank do %>
-          <div class="card mb-4 box-shadow">
-            <%= image_tag("github-logo.jpg", class: "card-img-top") %>
-            <div class="card-body">
-              <p class="card-text">Check out my profile on GitHub!</p>
-            </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to "https://github.com/thomashalljr", target: :_blank do %>
+        <div class="card mb-4 box-shadow">
+          <%= image_tag("github-logo.jpg", class: "card-img-top") %>
+          <div class="card-body">
+            <p class="card-text">Check out my profile on GitHub!</p>
           </div>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
