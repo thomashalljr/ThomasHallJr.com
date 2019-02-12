@@ -6,7 +6,7 @@
       <%= f.label :title %>
     </div>
     <div class="col-md-11">
-      <%= f.text_field :title, class: "form-control", placeholder: "Title of blog post", autofocus: true %>
+      <%= f.text_field :title, class: "form-control", placeholder: "Title", autofocus: true %>
     </div>
   </div>
   <div class="row pt-3">
@@ -14,11 +14,11 @@
       <%= f.label :body %>
     </div>
     <div class="col-md-11">
-      <%= f.text_area :body, rows: 10, class: "form-control", placeholder: "Body of blog post" %>
+      <%= f.text_area :body, rows: 10, class: "form-control", placeholder: "Body" %>
     </div>
   </div>
   <div class="row pt-3">
-    <div class="offset-md-2 col-md-10">
+    <div class="offset-md-1 col-md-11">
       <%= f.submit class: "btn btn-primary btn-large" %>
     </div>
   </div>
