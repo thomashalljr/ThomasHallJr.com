@@ -4,5 +4,13 @@ module ApplicationHelper
     size = options[:size]
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
     image_tag(gravatar_url, alt: user.username, class: "img-circle")
-   end
+  end
+
+  def flash_class(level)
+    case level
+      when "notice" then "alert alert-info"
+      when "success" then "alert alert-success"
+      when "error", "alert", "danger" then "alert alert-danger"
+    end
+  end
 end

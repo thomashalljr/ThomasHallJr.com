@@ -70,7 +70,12 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 56px 15px 0;
+}
+
+body > .alert {
+  margin-top: 56px;
+  text-align: center;
 }
 
 .footer > .container {
