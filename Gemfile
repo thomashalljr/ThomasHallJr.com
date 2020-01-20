@@ -11,7 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'loofah', '2.2.2'
+gem 'loofah', '2.3.1'
 gem 'rails-html-sanitizer', '1.0.4'
 gem 'bootstrap-will_paginate', '1.0.0'
 group :development, :test do
@@ -26,7 +26,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'will_paginate-bootstrap4'
 gem 'high_voltage'
 gem 'jquery-rails'
