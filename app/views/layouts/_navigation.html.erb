@@ -20,15 +20,18 @@
           <%= link_to "Contact Me", "mailto:thomashalljunior@gmail.com", class: "nav-link" %>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <% if Rails.env.development? %>
-          <% if logged_in? %>
-            <li class="nav-item active"><%= link_to "Log out", logout_path, method: :delete, class: "nav-link" %></li>
-          <% else %>
-            <li class="nav-item active"><%= link_to "Log in", login_path, class: "nav-link" %></li>
-          <% end %>
-        <% end %>
-      </ul>
+
+      <% if Rails.env.development? %>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <% if logged_in? %>
+                <%= link_to "Log out", logout_path, method: :delete, class: "nav-link" %>
+              <% else %>
+                <%= link_to "Log in", login_path, class: "nav-link" %>
+              <% end %>
+            </li>
+        </ul>
+      <% end %>
     </div>
   </nav>
 </header>
