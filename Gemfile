@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.3.4'
+ruby '2.5.0'
 
 gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.12'
@@ -21,7 +21,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'byebug', '~> 9.0', '>= 9.0.6'
-  gem 'capybara', '~> 2.13'
+  gem 'capybara', '~> 2.7', '>= 2.7.1'
+  gem 'nokogiri', '>= 1.10.8' # remediates dependabot vulnerability
   gem 'selenium-webdriver'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
