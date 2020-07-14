@@ -16,7 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'bootstrap', '~> 4.3.1'
 gem 'will_paginate-bootstrap4'
 gem 'jquery-rails'
-gem 'mysql2', '~> 0.3.18'
+gem 'mysql2', '~> 0.4.4'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
