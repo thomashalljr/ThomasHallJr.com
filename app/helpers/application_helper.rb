@@ -6,11 +6,11 @@ module ApplicationHelper
     image_tag(gravatar_url, alt: user.username, class: "img-circle")
   end
 
-  def flash_class(level)
-    case level
+  def flash_type_to_bootstrap_classes(type)
+    case type
       when "notice" then "alert alert-info"
       when "success" then "alert alert-success"
-      when "error", "alert", "danger" then "alert alert-danger"
+      when "error", "danger" then "alert alert-danger"
     end
   end
 end
