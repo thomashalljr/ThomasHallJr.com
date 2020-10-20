@@ -14,8 +14,8 @@ development:
   reconnect: false
   database: ThomasHallJr_development
   pool: 5
-  username: root
-  password: yourpassword
+  username: <%= ENV['THJ_DATABASE_USER'] %>
+  password: <%= ENV['THJ_DATABASE_PW'] %>
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -27,8 +27,8 @@ test:
   reconnect: false
   database: ThomasHallJr_test
   pool: 5
-  username: root
-  password: yourpassword
+  username: <%= ENV['THJ_DATABASE_USER'] %>
+  password: <%= ENV['THJ_DATABASE_PW'] %>
   host: localhost
 
 production:
