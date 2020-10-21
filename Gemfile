@@ -25,7 +25,6 @@ group :development, :test do
   gem 'nokogiri', '>= 1.10.8' # remediates dependabot vulnerability
   gem 'selenium-webdriver'
   gem 'factory_bot_rails'
-  gem 'rspec-rails'
 end
 
 group :development do
